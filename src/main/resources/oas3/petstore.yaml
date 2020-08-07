@@ -59,13 +59,13 @@ components:
         application/json:
           schema:
             $ref: "#/components/schemas/Criteria"
-      examples:
-        withAnd: 
-          value: {"AND":[{"GTE":{"field1":"10"}},{"LT":{"field2":"20"}}]}
-        withOr: 
-          value: {"OR":[{"GTE":{"field1":"10"}},{"LT":{"field2":"20"}}]}
-        withNot: 
-          value: {"NOT":[{"GTE":{"field1":"10"}},{"LT":{"field2":"20"}}]}
+#       examples:
+#         withAnd: 
+#           value: {"AND":[{"GTE":{"field1":"10"}},{"LT":{"field2":"20"}}]}
+#         withOr: 
+#           value: {"OR":[{"GTE":{"field1":"10"}},{"LT":{"field2":"20"}}]}
+#         withNot: 
+#           value: {"NOT":[{"GTE":{"field1":"10"}},{"LT":{"field2":"20"}}]}
     
   requestBodies:
     Pet:
