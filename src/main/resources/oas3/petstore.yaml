@@ -197,12 +197,12 @@ components:
 #          default: LTE
       
     LogicalExpression:
-      allOf:
-        - $ref: "#/components/schemas/Criteria"
       oneOf:
         - $ref: "#/components/schemas/LogicalExpressionAnd"
         - $ref: "#/components/schemas/LogicalExpressionOr"
         - $ref: "#/components/schemas/LogicalExpressionNot"
+      allOf:
+        - $ref: "#/components/schemas/Criteria"
       type: object
       discriminator:
         propertyName: operator
